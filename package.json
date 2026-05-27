@@ -1,0 +1,25 @@
+{
+  "name": "anime-geoquiz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "tsx server/index.ts",
+    "dev": "tsx watch server/index.ts",
+    "typecheck": "tsc --noEmit",
+    "smoke-test": "tsx server/smoke-test.ts",
+    "integration-test": "tsx client/integration-test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "ws": "^8.21.0"
+  }
+}
